@@ -1,14 +1,17 @@
 ---
 import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
 
 interface Props {
   title?: string;
   description?: string;
+  showNavbar?: boolean;
 }
 
 const { 
   title = 'A Sanctuary for Real Food. Becoming Founding Members.', 
-  description = '"Ora et Labora." We are reclaiming the table with food raised in the light. Join 25 Founding Families for our inaugural harvest.' 
+  description = '"Ora et Labora." We are reclaiming the table with food raised in the light. Join 25 Founding Families for our inaugural harvest.',
+  showNavbar = true
 } = Astro.props;
 
 const siteUrl = 'https://lindisfarn.com';
@@ -110,6 +113,8 @@ const canonicalURL = new URL(Astro.url.pathname, siteUrl);
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-[#2B2B2B] focus:text-[#F2F0E9] focus:px-4 focus:py-2 focus:rounded">
       Skip to main content
     </a>
+    
+    {showNavbar && <Navbar />}
     
     <main id="main-content">
       <slot />

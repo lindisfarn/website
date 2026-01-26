@@ -1,0 +1,163 @@
+---
+/**
+ * Navbar — Responsive navigation with mobile slide-in menu
+ */
+---
+
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-[#F2F0E9]/95 backdrop-blur-sm border-b border-[#2B2B2B]/10 transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+    <div class="flex items-center justify-between h-20 md:h-24">
+      
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3">
+        <img 
+          src="/crest.png" 
+          alt="Lindisfarn" 
+          class="w-24 h-24"
+        />
+        <span class="hidden sm:block font-['Cormorant_Garamond',serif] text-xl md:text-2xl text-[#2B2B2B] tracking-wide">
+          Lindisfarn
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/#hero" class="nav-link font-['JetBrains_Mono',monospace] text-xs tracking-wider uppercase text-[#4A5A66] hover:text-[#2B2B2B] transition-colors">
+          Home
+        </a>
+        <a href="/manifesto" class="nav-link font-['JetBrains_Mono',monospace] text-xs tracking-wider uppercase text-[#4A5A66] hover:text-[#2B2B2B] transition-colors">
+          Manifesto
+        </a>
+        <a href="/#how-it-works" class="nav-link font-['JetBrains_Mono',monospace] text-xs tracking-wider uppercase text-[#4A5A66] hover:text-[#2B2B2B] transition-colors">
+          How It Works
+        </a>
+        <a href="/#faq" class="nav-link font-['JetBrains_Mono',monospace] text-xs tracking-wider uppercase text-[#4A5A66] hover:text-[#2B2B2B] transition-colors">
+          FAQs
+        </a>
+        <a 
+          href="/#invitation" 
+          class="px-5 py-2 bg-[#C8A97E] text-[#1a1a1a] font-['JetBrains_Mono',monospace] text-xs tracking-wider uppercase hover:bg-[#2B2B2B] hover:text-[#F2F0E9] transition-colors duration-300"
+        >
+          Join Us
+        </a>
+      </div>
+
+      <!-- Mobile: Join Us + Hamburger -->
+      <div class="flex md:hidden items-center gap-3">
+        <a 
+          href="/#invitation" 
+          class="px-4 py-2 bg-[#C8A97E] text-[#1a1a1a] font-['JetBrains_Mono',monospace] text-[10px] tracking-wider uppercase hover:bg-[#2B2B2B] hover:text-[#F2F0E9] transition-colors duration-300"
+        >
+          Join Us
+        </a>
+        <button 
+          id="menu-toggle" 
+          class="p-2 text-[#2B2B2B] hover:text-[#C8A97E] transition-colors"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Slide-in Menu (outside nav for proper z-index) -->
+<div 
+  id="mobile-menu" 
+  class="fixed top-0 right-0 h-full w-72 bg-[#2B2B2B] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-[100] shadow-2xl"
+>
+  <div class="flex flex-col h-full">
+    <!-- Close Button -->
+    <div class="flex justify-end p-4">
+      <button 
+        id="menu-close" 
+        class="p-2 text-[#F2F0E9] hover:text-[#C8A97E] transition-colors"
+        aria-label="Close menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Links -->
+    <div class="flex flex-col px-6 py-4 space-y-6">
+      <a href="/#hero" class="mobile-nav-link font-['Cormorant_Garamond',serif] text-2xl text-[#F2F0E9] hover:text-[#C8A97E] transition-colors">
+        Home
+      </a>
+      <a href="/manifesto" class="mobile-nav-link font-['Cormorant_Garamond',serif] text-2xl text-[#F2F0E9] hover:text-[#C8A97E] transition-colors">
+        Manifesto
+      </a>
+      <a href="/#how-it-works" class="mobile-nav-link font-['Cormorant_Garamond',serif] text-2xl text-[#F2F0E9] hover:text-[#C8A97E] transition-colors">
+        How It Works
+      </a>
+      <a href="/#faq" class="mobile-nav-link font-['Cormorant_Garamond',serif] text-2xl text-[#F2F0E9] hover:text-[#C8A97E] transition-colors">
+        FAQs
+      </a>
+      <a 
+        href="/#invitation" 
+        class="mt-4 text-center px-6 py-3 bg-[#C8A97E] text-[#1a1a1a] font-['JetBrains_Mono',monospace] text-sm tracking-wider uppercase hover:bg-[#F2F0E9] transition-colors duration-300"
+      >
+        Join Us
+      </a>
+    </div>
+
+    <!-- Footer in menu -->
+    <div class="mt-auto p-6 border-t border-[#F2F0E9]/10">
+      <p class="font-['Cormorant_Garamond',serif] text-lg italic text-[#F2F0E9]/60">
+        Ora et Labora
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Overlay (outside nav for proper z-index) -->
+<div 
+  id="menu-overlay" 
+  class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden z-[90]"
+></div>
+
+<!-- Spacer to prevent content from hiding behind fixed navbar -->
+<div class="h-20 md:h-24"></div>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menuClose = document.getElementById('menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuOverlay = document.getElementById('menu-overlay');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  function openMenu() {
+    mobileMenu?.classList.remove('translate-x-full');
+    menuOverlay?.classList.remove('opacity-0', 'pointer-events-none');
+    menuOverlay?.classList.add('opacity-100', 'pointer-events-auto');
+    document.body.style.overflow = 'hidden';
+    menuToggle?.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMenu() {
+    mobileMenu?.classList.add('translate-x-full');
+    menuOverlay?.classList.add('opacity-0', 'pointer-events-none');
+    menuOverlay?.classList.remove('opacity-100', 'pointer-events-auto');
+    document.body.style.overflow = '';
+    menuToggle?.setAttribute('aria-expanded', 'false');
+  }
+
+  menuToggle?.addEventListener('click', openMenu);
+  menuClose?.addEventListener('click', closeMenu);
+  menuOverlay?.addEventListener('click', closeMenu);
+
+  // Close menu when clicking a link
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>
