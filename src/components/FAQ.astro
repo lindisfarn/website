@@ -1,0 +1,110 @@
+---
+/**
+ * FAQ — Frequently Asked Questions
+ * Accordion-style toggles with answers + FAQPage schema markup
+ */
+
+const faqs = [
+  {
+    question: "Why are you doing it this way?",
+    answer: "We believe in transparency and partnership. By working directly with a small group of Founding Members, we can focus on quality over quantity. You know exactly where your food comes from, how it's raised, and who is raising it. This isn't a subscription box—it's a relationship."
+  },
+  {
+    question: "How much does a pasture-raised chicken cost on average?",
+    answer: "Our target price is around $7.00 per pound, with birds averaging 4.5–5.0 lbs each. That comes to roughly $31–$35 per bird. Premium pasture-raised chicken at farmers' markets typically runs $6–$9 per pound. Founding Members lock in the best pricing we'll ever offer."
+  },
+  {
+    question: "Why is a deposit required?",
+    answer: "Raising chickens the right way has real upfront costs—chicks, feed, fencing, and processing. Your $100 deposit in March helps us cover these early-season expenses and confirms your commitment. It's applied directly toward your final order total."
+  },
+  {
+    question: "What does 'pasture-raised' actually mean here?",
+    answer: "Our birds live outside on open grass—not in a barn with a token 'pasture access' door. Every day, we move them to fresh pasture where they forage for insects, clover, and seeds. This is how chickens are meant to live, and you can taste the difference."
+  },
+  {
+    question: "Are there health benefits to pasture-raised chicken?",
+    answer: "Yes. Studies show pasture-raised poultry tends to have higher levels of omega-3 fatty acids, more vitamin E, and a healthier omega-6 to omega-3 ratio compared to conventionally raised birds. The natural diet of insects, seeds, and greens—plus exercise and sunlight—contributes to meat that's not just tastier, but more nutritious."
+  },
+  {
+    question: "When and where do I pick up my order?",
+    answer: "Pickup occurs in late September at our farm in Glen Robertson, Ontario. You'll receive an email to schedule your preferred time slot. Birds come back from a licensed butcher, flash-frozen for peak quality and food safety."
+  },
+  {
+    question: "What if I can't pick up my order?",
+    answer: "Life happens. If you can't make your scheduled time, let us know and we'll work with you to arrange an alternative. We're flexible—just communicate with us."
+  },
+  {
+    question: "Why only 25 Founding Members?",
+    answer: "This is our inaugural season. We're starting small so we can deliver an exceptional experience and learn alongside our members. Founding Members get priority access, the best pricing forever, and a genuine connection to the farm."
+  }
+];
+
+// Generate FAQPage schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<section 
+  id="faq" 
+  class="relative px-6 py-20 md:py-28 bg-[#2B2B2B]"
+>
+  <div class="max-w-3xl mx-auto">
+    
+    <!-- Section Label -->
+    <p class="text-center text-xs tracking-[0.3em] uppercase text-[#C8A97E] mb-4 font-['JetBrains_Mono',monospace]">
+      Common Questions
+    </p>
+    
+    <!-- Section Title -->
+    <h2 class="text-center font-['Cormorant_Garamond',serif] text-3xl md:text-4xl lg:text-5xl text-[#F2F0E9] mb-12 md:mb-16">
+      Frequently Asked Questions
+    </h2>
+
+    <!-- FAQ Accordion -->
+    <div class="space-y-4">
+      {faqs.map((faq, index) => (
+        <details class="group bg-[#F2F0E9]/5 border border-[#F2F0E9]/10 rounded-xl overflow-hidden">
+          <summary class="flex items-center justify-between cursor-pointer p-5 md:p-6 list-none">
+            <h3 class="font-['Cormorant_Garamond',serif] text-lg md:text-xl text-[#F2F0E9] pr-4">
+              {faq.question}
+            </h3>
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#C8A97E]/20 flex items-center justify-center transition-transform duration-300 group-open:rotate-45">
+              <svg class="w-4 h-4 text-[#C8A97E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"></path>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 md:px-6 md:pb-6">
+            <p class="font-['EB_Garamond',serif] text-base md:text-lg text-[#F2F0E9]/80 leading-relaxed">
+              {faq.answer}
+            </p>
+          </div>
+        </details>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQPage Schema Markup -->
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<style>
+  /* Remove default marker */
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details summary::marker {
+    display: none;
+  }
+</style>
