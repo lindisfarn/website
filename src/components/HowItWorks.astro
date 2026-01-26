@@ -1,0 +1,92 @@
+---
+/**
+ * HowItWorks — How It Works Section
+ * Step-by-step timeline showing the Founder journey
+ */
+
+const steps = [
+  {
+    number: "01",
+    title: "Apply to Become a Founder",
+    description: "Submit your application through our online form. We review each request personally to ensure we can serve you well."
+  },
+  {
+    number: "02",
+    title: "Wait for Approval",
+    description: "Your application will be reviewed within 24–48 hours. We'll notify you by email once you're accepted into the founding membership."
+  },
+  {
+    number: "03",
+    title: "Make Your Deposit",
+    description: "On March 5th, accepted founders receive an email to make an initial $100 deposit. This covers early-season expenses and secures your spot."
+  },
+  {
+    number: "04",
+    title: "Reserve Your Pickup",
+    description: "By late September, you'll be notified to schedule your pickup time. Your birds return from the butcher flash-frozen for peak quality."
+  },
+  {
+    number: "05",
+    title: "Pay & Collect",
+    description: "Final payment is due at the time of scheduling. Then simply arrive at your reserved time to collect your harvest."
+  }
+];
+---
+
+<section 
+  id="how-it-works" 
+  class="relative px-6 py-20 md:py-28 bg-[#F2F0E9]"
+>
+  <div class="max-w-3xl mx-auto">
+    
+    <!-- Section Label -->
+    <p class="text-center text-xs tracking-[0.3em] uppercase text-[#2D5016] mb-4 font-['JetBrains_Mono',monospace]">
+      The Process
+    </p>
+    
+    <!-- Section Title -->
+    <h2 class="text-center font-['Cormorant_Garamond',serif] text-3xl md:text-4xl lg:text-5xl text-[#2B2B2B] mb-12 md:mb-16">
+      How It Works
+    </h2>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Vertical line (hidden on mobile, shown on md+) -->
+      <div class="hidden md:block absolute left-8 top-0 bottom-0 w-px bg-[#C8A97E]/40"></div>
+      
+      <!-- Steps -->
+      <div class="space-y-8 md:space-y-10">
+        {steps.map((step, index) => (
+          <div class="relative flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+            <!-- Step Number Circle -->
+            <div class="flex-shrink-0 w-16 h-16 rounded-full bg-[#2B2B2B] flex items-center justify-center relative z-10">
+              <span class="font-['JetBrains_Mono',monospace] text-sm tracking-wider text-[#C8A97E]">
+                {step.number}
+              </span>
+            </div>
+            
+            <!-- Content Card -->
+            <div class="flex-1 bg-white/80 backdrop-blur-sm rounded-xl p-5 md:p-6 shadow-sm border border-[#2B2B2B]/5">
+              <h3 class="font-['Cormorant_Garamond',serif] text-xl md:text-2xl text-[#2B2B2B] mb-2">
+                {step.title}
+              </h3>
+              <p class="font-['EB_Garamond',serif] text-base md:text-lg text-[#4A5A66] leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Additional note -->
+    <div class="mt-12 text-center">
+      <div class="inline-block border border-[#2B2B2B]/20 px-6 py-4 rounded-lg bg-white/50">
+        <p class="font-['JetBrains_Mono',monospace] text-xs md:text-sm tracking-wider text-[#4A5A66]">
+          Questions? Reach out anytime — we're happy to help.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
