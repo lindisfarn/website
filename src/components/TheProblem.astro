@@ -1,17 +1,13 @@
 ---
 /**
  * TheProblem — Act II
- * Dark section with line-by-line text reveal
- * 
- * COPY STRATEGY: Validate Sarah's suspicions. She already distrusts the food 
- * system—we're not convincing her of anything new, just confirming what she 
- * already knows. Creates emotional resonance and positions us as allies.
+ * Dark section - mobile: image first, text centered
  */
 ---
 
 <section 
   id="problem" 
-  class="relative min-h-screen flex items-center justify-center px-6 py-24 bg-[#1a1a1a] text-[#F2F0E9] overflow-hidden"
+  class="relative flex items-center justify-center px-6 py-16 md:py-24 bg-[#1a1a1a] text-[#F2F0E9] overflow-hidden"
 >
   <!-- Subtle grain overlay -->
   <div class="absolute inset-0 opacity-[0.03] pointer-events-none">
@@ -23,33 +19,31 @@
     </svg>
   </div>
 
-  <div class="relative z-10 max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-    <!-- Text Content -->
-    <div class="problem-text space-y-8 text-xl md:text-2xl lg:text-3xl leading-relaxed font-['EB_Garamond',serif] lg:flex-1">
-      <p class="problem-line ">
+  <div class="relative z-10 max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    <!-- Image FIRST on mobile (flex-col-reverse for text to show after) -->
+    <div class="problem-image lg:flex-1 flex justify-center order-first lg:order-last">
+      <img 
+        src="/cornish-cross.png" 
+        alt="Cornish Cross chicken in pasture" 
+        loading="lazy"
+        class="w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 object-cover rounded-full shadow-2xl ring-4 ring-[#C8A97E]/20"
+      />
+    </div>
+    
+    <!-- Text Content - centered on mobile -->
+    <div class="problem-text space-y-6 text-lg md:text-xl lg:text-2xl leading-relaxed font-['EB_Garamond',serif] lg:flex-1 text-center lg:text-left">
+      <p class="problem-line">
         You already know something is wrong.
       </p>
-      <p class="problem-line ">
+      <p class="problem-line">
         Grocery store chicken is pale, watery, and flavorless. It needs seasoning just to taste like anything.
       </p>
-      <p class="problem-line ">
+      <p class="problem-line">
         That's because most birds never see sunlight. They're raised in crowded barns, bred for speed—not nourishment.
       </p>
       <p class="problem-line text-[#C8A97E] font-medium">
         You deserve better. Your family deserves better.
       </p>
     </div>
-    
-    <!-- Cornish Cross Chicken Image -->
-    <div class="problem-image lg:flex-1 flex justify-center">
-      <img 
-        src="/cornish-cross.png" 
-        alt="Cornish Cross chicken in pasture" 
-        loading="lazy"
-        class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full shadow-2xl ring-4 ring-[#C8A97E]/20"
-      />
-    </div>
   </div>
 </section>
-
-

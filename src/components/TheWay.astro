@@ -1,13 +1,15 @@
 ---
 /**
  * TheWay — Act III
- * Return to light with improved readability - cards on semi-transparent background
+ * Return to light - reduced padding, dark green accent instead of gold
  */
+
+const darkGreen = '#2D5016';
 ---
 
 <section 
   id="the-way" 
-  class="relative min-h-screen overflow-hidden"
+  class="relative overflow-hidden"
 >
   <!-- Full-bleed background image -->
   <div class="absolute inset-0">
@@ -15,39 +17,39 @@
       src="/farm-sunrise.png" 
       alt="Pastoral farm at sunrise"
       loading="lazy"
-      class="way-image w-full h-full object-cover "
+      class="way-image w-full h-full object-cover"
     />
     <!-- Stronger overlay for readability -->
-    <div class="absolute inset-0 bg-gradient-to-b from-[#F2F0E9]/70 via-[#F2F0E9]/60 to-[#F2F0E9]"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#F2F0E9]/80 via-[#F2F0E9]/70 to-[#F2F0E9]"></div>
   </div>
 
-  <!-- Content -->
-  <div class="relative z-10 min-h-screen flex items-center py-24 md:py-32 px-6">
+  <!-- Content - reduced padding -->
+  <div class="relative z-10 flex items-center py-12 md:py-20 px-6">
     <div class="max-w-3xl mx-auto">
       <!-- Section header -->
-      <h2 class="way-line text-center font-['Cormorant_Garamond',serif] text-3xl md:text-4xl lg:text-5xl text-[#2B2B2B] mb-12 md:mb-16">
+      <h2 class="way-line text-center font-['Cormorant_Garamond',serif] text-2xl md:text-3xl lg:text-4xl text-[#2B2B2B] mb-8 md:mb-12">
         Here's how we do it differently.
       </h2>
       
       <!-- Content cards for better readability -->
-      <div class="space-y-6">
-        <div class="way-line bg-[#F2F0E9]/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-sm border border-[#2B2B2B]/5">
-          <p class="text-lg md:text-xl leading-relaxed font-['EB_Garamond',serif] text-[#2B2B2B]">
-            <span class="text-[#C8A97E] font-semibold">Real pasture, not a marketing term.</span><br/>
+      <div class="space-y-4 md:space-y-6">
+        <div class="way-line bg-[#F2F0E9]/95 backdrop-blur-sm rounded-xl p-5 md:p-6 shadow-sm border border-[#2B2B2B]/5">
+          <p class="text-base md:text-lg leading-relaxed font-['EB_Garamond',serif] text-[#2B2B2B]">
+            <span class="text-[#2D5016] font-semibold">Real pasture, not a marketing term.</span><br/>
             Our birds live outside on open grass—not in a barn with a "pasture access" door that most never use.
           </p>
         </div>
         
-        <div class="way-line bg-[#F2F0E9]/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-sm border border-[#2B2B2B]/5">
-          <p class="text-lg md:text-xl leading-relaxed font-['EB_Garamond',serif] text-[#2B2B2B]">
-            <span class="text-[#C8A97E] font-semibold">Moved to fresh grass daily.</span><br/>
+        <div class="way-line bg-[#F2F0E9]/95 backdrop-blur-sm rounded-xl p-5 md:p-6 shadow-sm border border-[#2B2B2B]/5">
+          <p class="text-base md:text-lg leading-relaxed font-['EB_Garamond',serif] text-[#2B2B2B]">
+            <span class="text-[#2D5016] font-semibold">Moved to fresh grass daily.</span><br/>
             Every morning, we move the flock to new pasture where they forage for insects, clover, and seeds—the diet they evolved to eat.
           </p>
         </div>
         
-        <div class="way-line bg-[#F2F0E9]/90 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-sm border border-[#2B2B2B]/5">
-          <p class="text-lg md:text-xl leading-relaxed font-['EB_Garamond',serif] text-[#2B2B2B]">
-            <span class="text-[#C8A97E] font-semibold">You can taste the difference.</span><br/>
+        <div class="way-line bg-[#F2F0E9]/95 backdrop-blur-sm rounded-xl p-5 md:p-6 shadow-sm border border-[#2B2B2B]/5">
+          <p class="text-base md:text-lg leading-relaxed font-['EB_Garamond',serif] text-[#2B2B2B]">
+            <span class="text-[#2D5016] font-semibold">You can taste the difference.</span><br/>
             Deep, rich flavor. Golden fat. The kind of chicken your grandmother remembers.
           </p>
         </div>
@@ -55,5 +57,3 @@
     </div>
   </div>
 </section>
-
-
