@@ -1,0 +1,62 @@
+---
+/**
+ * HeroOpening — Act I
+ * Hero with clear CTA to Zoho Tables application
+ */
+---
+
+<section 
+  id="hero" 
+  class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden"
+>
+  <!-- Background -->
+  <div class="absolute inset-0 bg-gradient-to-b from-[#F2F0E9] via-[#EDE8DD] to-[#F2F0E9]"></div>
+  
+  <!-- Content -->
+  <div class="relative z-10">
+    <!-- Crest -->
+    <img 
+      src="/crest.png" 
+      alt="Lindisfarn Crest" 
+      class="hero-crest mx-auto mb-6 md:mb-8 w-24 md:w-32 lg:w-40"
+    />
+    
+    <h1 class="hero-title font-['Cormorant_Garamond',serif] text-[#2B2B2B]">
+      <span class="hero-word inline-block text-[16vw] md:text-[12vw] lg:text-[10vw] font-light tracking-[0.1em] leading-[0.85]">
+        Lindisfarn
+      </span>
+    </h1>
+    
+    <!-- Primary value proposition -->
+    <p class="hero-tagline mt-8 md:mt-12 text-[#2B2B2B] text-lg md:text-xl font-['EB_Garamond',serif] max-w-md mx-auto leading-relaxed">
+      Chicken that tastes like it used to.
+    </p>
+    
+    <p class="hero-location mt-4 text-[#4A5A66] text-base font-['EB_Garamond',serif]">
+      Pasture-raised in Glen Robertson, Ontario.
+    </p>
+    
+    <!-- Key details -->
+    <p class="mt-6 text-[#C8A97E] text-sm font-['JetBrains_Mono',monospace] tracking-wide">
+      25 Founding Members Only · Best Price Forever · Min. 10 Birds
+    </p>
+    
+    <!-- CTA Button - Black background -->
+    <a 
+      href="https://tables.zohocloud.ca/fview/publish/Vt1vlV3u2KWD4aCpQESx6Q"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block mt-8 px-10 py-4 bg-[#2B2B2B] text-[#F2F0E9] font-['JetBrains_Mono',monospace] text-sm tracking-[0.15em] uppercase hover:bg-[#C8A97E] hover:text-[#1a1a1a] transition-colors duration-300"
+    >
+      Apply Now
+    </a>
+  </div>
+  
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-12 left-1/2 -translate-x-1/2 scroll-indicator">
+    <div class="flex flex-col items-center gap-3 text-[#4A5A66]">
+      <span class="text-xs tracking-[0.2em] uppercase">See how</span>
+      <div class="w-px h-12 bg-gradient-to-b from-[#4A5A66]/50 to-transparent"></div>
+    </div>
+  </div>
+</section>

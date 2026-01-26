@@ -1,23 +1,132 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = 'Lindisfarn — Pasture-Raised Poultry', 
+  description = 'Real food, raised right. Pasture-raised chicken from Glen Robertson, Ontario.' 
+} = Astro.props;
+
+const siteUrl = 'https://lindisfarn.com';
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="Lindisfarn" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" 
+      rel="stylesheet" 
+    />
+    
+    <title>{title}</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Lindisfarn",
+      "description": description,
+      "url": siteUrl,
+      "image": `${siteUrl}/og-image.png`,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Glen Robertson",
+        "addressRegion": "Ontario",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "45.2356",
+        "longitude": "-74.6278"
+      },
+      "priceRange": "$$",
+      "openingHours": "By appointment",
+      "sameAs": []
+    })} />
+  </head>
+  <body class="bg-[#F2F0E9] text-[#2B2B2B] font-['Inter',sans-serif] antialiased overflow-x-hidden">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-[#2B2B2B] focus:text-[#F2F0E9] focus:px-4 focus:py-2 focus:rounded">
+      Skip to main content
+    </a>
+    
+    <main id="main-content">
+      <slot />
+    </main>
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  /* Typography System */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+  }
+
+  /* Smooth scroll fallback */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Prevent font loading jitter */
+  @font-face {
+    font-family: 'Cormorant Garamond';
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'EB Garamond';
+    font-display: swap;
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: #C8A97E;
+    color: #F2F0E9;
+  }
+
+  /* Screen reader only utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 </style>

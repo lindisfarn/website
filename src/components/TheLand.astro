@@ -1,0 +1,92 @@
+---
+/**
+ * TheLand — Act IV
+ * Horizontal scroll gallery of farm images
+ * 
+ * COPY STRATEGY: Build trust through transparency. Sarah wants to know the 
+ * face behind the product. Show the farm, the practices, the place. Specific 
+ * details = credibility.
+ */
+---
+
+<section 
+  id="the-land" 
+  class="relative bg-[#F2F0E9] overflow-hidden"
+>
+  <!-- Horizontal scroll container -->
+  <div class="land-container flex items-center min-h-screen">
+    <div class="land-track flex gap-8 px-8 md:px-16">
+      <!-- Card 1 -->
+      <div class="land-card shrink-0 w-[80vw] md:w-[50vw] lg:w-[40vw] ">
+        <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
+          <img 
+            src="/chickens.png" 
+            alt="Heritage chickens foraging on pasture"
+            loading="lazy"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <p class="mt-4 text-[#2B2B2B] font-['EB_Garamond',serif] text-lg">
+          Heritage breeds raised for flavor—not factory efficiency.
+        </p>
+        <p class="mt-1 text-[#4A5A66] text-sm">
+          They grow slower. They taste better.
+        </p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="land-card shrink-0 w-[80vw] md:w-[50vw] lg:w-[40vw] ">
+        <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
+          <img 
+            src="/fields.png" 
+            alt="Rolling green pastures"
+            loading="lazy"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <p class="mt-4 text-[#2B2B2B] font-['EB_Garamond',serif] text-lg">
+          60 acres of rotationally grazed pasture.
+        </p>
+        <p class="mt-1 text-[#4A5A66] text-sm">
+          The birds fertilize the land. The land feeds the birds.
+        </p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="land-card shrink-0 w-[80vw] md:w-[50vw] lg:w-[40vw] ">
+        <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
+          <img 
+            src="/coop.png" 
+            alt="Mobile chicken coop at golden hour"
+            loading="lazy"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <p class="mt-4 text-[#2B2B2B] font-['EB_Garamond',serif] text-lg">
+          Mobile coops move to fresh grass every single day.
+        </p>
+        <p class="mt-1 text-[#4A5A66] text-sm">
+          No shared ground. No buildup. Just clean pasture.
+        </p>
+      </div>
+      
+      <!-- Card 4: Location + Connection -->
+      <div class="land-card shrink-0 w-[80vw] md:w-[50vw] lg:w-[40vw] flex items-center justify-center ">
+        <div class="text-center max-w-sm">
+          <p class="font-['JetBrains_Mono',monospace] text-sm tracking-widest text-[#4A5A66]">
+            45.2356° N, 74.6278° W
+          </p>
+          <p class="mt-4 font-['Cormorant_Garamond',serif] text-3xl md:text-4xl text-[#2B2B2B]">
+            Glen Robertson, Ontario
+          </p>
+          <p class="mt-4 font-['EB_Garamond',serif] text-lg text-[#4A5A66]">
+            90 minutes from Ottawa. 60 from Montreal.<br/>
+            Close enough to visit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Thank You — Lindisfarn" description="Your founding membership request has been received.">
+  <main class="min-h-screen flex items-center justify-center px-6 py-24">
+    <div class="max-w-md text-center">
+      <!-- Crest -->
+      <img 
+        src="/crest.png" 
+        alt="Lindisfarn Crest" 
+        class="mx-auto mb-8 w-24 md:w-32"
+      />
+      
+      <h1 class="font-['Cormorant_Garamond',serif] text-4xl md:text-5xl text-[#2B2B2B] mb-6">
+        Thank You
+      </h1>
+      
+      <p class="font-['EB_Garamond',serif] text-xl text-[#4A5A66] leading-relaxed mb-8">
+        Your request has been received.<br/>
+        We'll be in touch within 48 hours.
+      </p>
+      
+      <a 
+        href="/"
+        class="inline-block font-['JetBrains_Mono',monospace] text-sm tracking-widest text-[#2B2B2B] hover:text-[#C8A97E] transition-colors"
+      >
+        ← Return Home
+      </a>
+    </div>
+  </main>
+</Layout>

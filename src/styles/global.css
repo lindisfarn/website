@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Lindisfarn DESIGN SYSTEM
+   "The Digital Monastery"
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Spacing Scale */
+@theme {
+  --spacing-section: clamp(5rem, 10vw, 8rem);
+  --spacing-section-lg: clamp(6rem, 12vw, 10rem);
+  --color-vellum: #F2F0E9;
+  --color-iron: #2B2B2B;
+  --color-gold: #C8A97E;
+  --color-stone: #4A5A66;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   PROSE TYPOGRAPHY
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.prose {
+  font-size: clamp(1.0625rem, 1vw + 0.5rem, 1.25rem);
+  line-height: 1.85;
+  max-width: 60ch;
+  color: var(--color-iron);
+}
+
+.prose p + p {
+  margin-top: 1.75em;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   DROP CAP
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.drop-cap::first-letter {
+  float: left;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 4.5em;
+  font-weight: 600;
+  line-height: 0.8;
+  margin-right: 0.1em;
+  margin-top: 0.05em;
+  color: var(--color-iron);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   DECORATIVE ELEMENTS
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--color-stone);
+  opacity: 0.5;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: currentColor;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   SECTION LABELS
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  opacity: 0.7;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   PULL QUOTE
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.pull-quote {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-iron);
+  border-left: 2px solid var(--color-gold);
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   ROMANESQUE ARCH MASK
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.arch-mask {
+  clip-path: url(#arch-clip);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   COUNTER BOX
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.counter-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--color-stone);
+  border-radius: 2px;
+}
+
+.counter-box::before,
+.counter-box::after {
+  content: '✦';
+  font-size: 0.5rem;
+  color: var(--color-gold);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   FORM ENHANCEMENTS
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.form-label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-stone);
+  padding-bottom: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--color-iron);
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+
+.form-input::placeholder {
+  color: transparent;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   LOADER ANIMATION
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.95);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
+}
