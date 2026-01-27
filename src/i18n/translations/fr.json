@@ -37,7 +37,7 @@
       {
         "number": "01",
         "title": "Postuler",
-        "description": "Soumettez votre demande de famille fondatrice. Nous examinons chacune personnellement."
+        "description": "Soumettez votre demande de membre fondateur. Nous examinons chacune personnellement."
       },
       {
         "number": "02",
@@ -70,7 +70,7 @@
   },
   "invitation": {
     "label": "L'invitation",
-    "title": "Devenez une famille fondatrice",
+    "title": "Devenez un membre fondateur",
     "p1": "Nous ouvrons 25 places pour notre récolte inaugurale de 2026.",
     "p2": "En tant que membre fondateur, vous bénéficierez d'un accès prioritaire à tous les futurs lots, d'une tarification transparente et d'une relation directe avec votre fermier.",
     "benefits": {
@@ -226,7 +226,7 @@
     "label": "Légal",
     "title": "Entente d'adhésion des familles fondatrices",
     "lastUpdated": "Dernière mise à jour : 27 janvier 2026",
-    "intro": "Bienvenue chez Lindisfarn. En vous joignant comme famille fondatrice, vous entrez dans un partenariat avec nous. Cette entente décrit comment ce partenariat fonctionne — clairement et équitablement.",
+    "intro": "Bienvenue chez Lindisfarn. En vous joignant comme membre fondateur, vous entrez dans un partenariat avec nous. Cette entente décrit comment ce partenariat fonctionne — clairement et équitablement.",
     "sections": {
       "deposit": {
         "title": "1. Le dépôt",
@@ -284,7 +284,7 @@
       },
       "agreement": {
         "title": "8. Entente",
-        "p1": "En soumettant votre demande de famille fondatrice et votre dépôt, vous confirmez avoir lu, compris et accepté ces conditions.",
+        "p1": "En soumettant votre demande de membre fondateur et votre dépôt, vous confirmez avoir lu, compris et accepté ces conditions.",
         "p2": "Des questions? Nous serons heureux de clarifier quoi que ce soit. Contactez-nous."
       }
     }
