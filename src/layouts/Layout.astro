@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import { getLocaleFromPath, getAlternateUrl } from '../i18n/config';
+import { t } from '../i18n/utils';
 
 interface Props {
   title?: string;
@@ -13,11 +14,13 @@ interface Props {
 // Detect locale from URL path
 const detectedLocale = getLocaleFromPath(Astro.url.pathname);
 
+
+
 const { 
-  title = 'A Sanctuary for Real Food. Becoming Founding Members.', 
-  description = '"Ora et Labora." We are reclaiming the table with food raised in the light. Join 25 Founding Families for our inaugural harvest.',
+  lang = detectedLocale,
   showNavbar = true,
-  lang = detectedLocale
+  title = t('meta.title', lang),
+  description = t('meta.description', lang)
 } = Astro.props;
 
 const siteUrl = 'https://lindisfarn.com';
