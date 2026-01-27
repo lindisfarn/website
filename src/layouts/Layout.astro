@@ -1,30 +1,49 @@
 ---
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
+import { getLocaleFromPath, getAlternateUrl } from '../i18n/config';
 
 interface Props {
   title?: string;
   description?: string;
   showNavbar?: boolean;
+  lang?: 'en' | 'fr';
 }
+
+// Detect locale from URL path
+const detectedLocale = getLocaleFromPath(Astro.url.pathname);
 
 const { 
   title = 'A Sanctuary for Real Food. Becoming Founding Members.', 
   description = '"Ora et Labora." We are reclaiming the table with food raised in the light. Join 25 Founding Families for our inaugural harvest.',
-  showNavbar = true
+  showNavbar = true,
+  lang = detectedLocale
 } = Astro.props;
 
 const siteUrl = 'https://lindisfarn.com';
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+
+// Generate alternate URLs for hreflang tags
+const currentPath = Astro.url.pathname;
+const enUrl = new URL(getAlternateUrl(currentPath, 'en'), siteUrl).href;
+const frUrl = new URL(getAlternateUrl(currentPath, 'fr'), siteUrl).href;
+
+// Locale for Open Graph
+const ogLocale = lang === 'fr' ? 'fr_CA' : 'en_CA';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+    
+    <!-- hreflang tags for SEO -->
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="fr-CA" href={frUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
     
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -43,7 +62,7 @@ const canonicalURL = new URL(Astro.url.pathname, siteUrl);
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="Lindisfarn" />
-    <meta property="og:locale" content="en_CA" />
+    <meta property="og:locale" content={ogLocale} />
     <meta property="og:image" content={`${siteUrl}/og-image.png`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />

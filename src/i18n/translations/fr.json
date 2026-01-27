@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "title": "Lindisfarn | Un sanctuaire pour la vraie nourriture",
+    "description": "« Ora et Labora. » Nous réclamons la table avec des animaux élevés à la lumière. Joignez-vous à 25 familles fondatrices pour notre récolte inaugurale."
+  },
+  "nav": {
+    "home": "Accueil",
+    "manifesto": "Manifeste",
+    "howItWorks": "Comment ça marche",
+    "faqs": "FAQ",
+    "joinUs": "Devenez Membre"
+  },
+  "hero": {
+    "tagline": "Un sanctuaire pour la vraie nourriture",
+    "subtitle": "Nous réclamons la table avec des animaux élevés à la lumière.",
+    "cta": "Devenir membre fondateur"
+  },
+  "problem": {
+    "label": "Le problème",
+    "line1": "Vous savez déjà que quelque chose ne va pas.",
+    "line2": "Le poulet d'épicerie est pâle, aqueux et sans saveur. Il a besoin d'assaisonnement juste pour goûter à quelque chose.",
+    "line3": "C'est parce que la plupart des poules ne voient jamais la lumière du soleil. Ils sont élevés dans des granges bondées, sélectionnés pour la vitesse — pas pour la nutrition.",
+    "line4": "Vous méritez mieux. Votre famille mérite mieux.",
+    "manifestoBtn": "Lire notre manifeste"
+  },
+  "way": {
+    "label": "Notre façon",
+    "title": "Élevés à la lumière",
+    "p1": "Nos poulets vivent en plein air sur des pâturages frais, déplacés quotidiennement vers une nouvelle herbe.",
+    "p2": "Ils cherchent des insectes, profitent du soleil et développent le gras riche et doré qui ne vient que d'une vie bien vécue.",
+    "p3": "Aucun antibiotique. Aucun éclairage artificiel. Juste des poules élevés comme vos arrière-grands-parents s'en souviennent."
+  },
+  "howItWorks": {
+    "label": "Comment ça marche",
+    "title": "Le parcours du fondateur",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Postuler",
+        "description": "Soumettez votre demande de famille fondatrice. Nous examinons chacune personnellement."
+      },
+      {
+        "number": "02",
+        "title": "Réserver",
+        "description": "Payez votre dépôt de 100 $ en mars pour garantir votre place et un minimum de 10 poules."
+      },
+      {
+        "number": "03",
+        "title": "Nous élevons",
+        "description": "De mai à septembre, nous élevons vos poules sur pâturage avec des déplacements quotidiens vers une herbe fraîche."
+      },
+      {
+        "number": "04",
+        "title": "Récolte",
+        "description": "Fin septembre, les poules sont transformés par un boucher agréé, emballés sous vide et surgelés."
+      },
+      {
+        "number": "05",
+        "title": "Cueillette",
+        "description": "Récupérez votre commande à la ferme à Glen Robertson. Payez le solde selon le poids réel."
+      }
+    ],
+    "questions": "Des questions? Contactez-nous à tout moment — nous sommes là pour vous aider."
+  },
+  "land": {
+    "label": "La terre",
+    "title": "Glen Robertson, Ontario",
+    "p1": "Notre ferme est située sur 70 acres de pâturages vallonnés dans l'est de l'Ontario.",
+    "p2": "Nous sommes des gardiens, pas des propriétaires — nous construisons la santé du sol pour les générations futures."
+  },
+  "invitation": {
+    "label": "L'invitation",
+    "title": "Devenez une famille fondatrice",
+    "p1": "Nous ouvrons 25 places pour notre récolte inaugurale de 2026.",
+    "p2": "En tant que membre fondateur, vous bénéficierez d'un accès prioritaire à tous les futurs lots, d'une tarification transparente et d'une relation directe avec votre fermier.",
+    "benefits": {
+      "membersLabel": "MEMBRES FONDATEURS",
+      "membersValue": "25",
+      "priceLabel": "PRIX",
+      "priceValue": "Meilleur",
+      "orderLabel": "COMMANDE MINIMUM",
+      "orderValue": "10 Poules",
+      "pickupLabel": "CUEILLETTE",
+      "pickupValue": "Fin Sept."
+    },
+    "deposit": "Dépôt de 100 $ · Minimum de 10 poules",
+    "pickup": "Cueillette à Glen Robertson, fin septembre 2026",
+    "cta": "Postuler maintenant"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Pourquoi le dépôt est-il non remboursable?",
+        "a": "Votre dépôt est perçu en mars et sert directement à l'achat de nos poussins et de leur nourriture. Une fois que nous avons commandé des poules pour vous, ces coûts sont engagés. Nous gardons notre exploitation simple — pas d'intermédiaires, pas de gaspillage."
+      },
+      {
+        "q": "Combien coûtera ma commande finale?",
+        "a": "Nos poulets sont vendus à la livre. Un oiseau typique pèse de 5 à 7 lb habillé. Avec un minimum de 10 poules, prévoyez un total entre 350 $ et 490 $. Votre dépôt de 100 $ est crédité sur ce solde."
+      },
+      {
+        "q": "Puis-je visiter la ferme?",
+        "a": "Absolument. Nous encourageons les familles fondatrices à visiter pendant la saison. Vous verrez exactement comment votre nourriture est élevée. Contactez-nous simplement pour planifier une visite."
+      },
+      {
+        "q": "Que se passe-t-il si je ne peux pas venir le jour de la récolte?",
+        "a": "Contactez-nous pour organiser un autre moment. Si nous n'avons pas de nouvelles de vous dans les 7 jours, vos poules seront donnés à une banque alimentaire locale et votre dépôt sera perdu."
+      },
+      {
+        "q": "Vos poulets sont-ils biologiques?",
+        "a": "Nous suivons les principes biologiques, mais nous ne sommes pas certifiés. Nos poules mangent des aliments sans OGM, pâturent quotidiennement et ne reçoivent aucun antibiotique. La certification coûte cher — nous préférons garder votre nourriture abordable."
+      },
+      {
+        "q": "Qu'est-ce qui est spécial avec le poulet élevé en pâturage?",
+        "a": "Les poules élevés en pâturage ont plus d'oméga-3, plus de vitamines A et E, et une saveur nettement meilleure. La différence est visible — nos poules ont un gras doré et ferme grâce au soleil et à une alimentation variée."
+      },
+      {
+        "q": "À quoi ressemblent les poulets à la réception?",
+        "a": "Vos poules arrivent entiers, emballés sous vide et surgelés. Ils sont complètement habillés (nettoyés, sans tête ni pattes) tout comme en épicerie — mais avec une saveur et une nutrition incomparablement meilleures."
+      }
+    ]
+  },
+  "ledger": {
+    "label": "Le registre",
+    "title": "Contactez-nous",
+    "p1": "Des questions? Vous voulez en savoir plus avant de postuler? Envoyez-nous un message.",
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "email": "Courriel",
+      "message": "Message",
+      "messagePlaceholder": "Votre question ou message...",
+      "submit": "Envoyer un message",
+      "sending": "Envoi en cours..."
+    }
+  },
+  "footer": {
+    "motto": "Ora et Labora",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "copyright": "© 2026 Lindisfarn · Glen Robertson, Ontario"
+  },
+  "thankYou": {
+    "title": "Merci",
+    "message": "Votre demande a été reçue.",
+    "followUp": "Nous vous contacterons dans les 48 heures.",
+    "returnHome": "← Retour à l'accueil"
+  },
+  "manifesto": {
+    "label": "Notre manifeste",
+    "title": "En défense du réel",
+    "motto": "« Ora et Labora » — Prie et travaille",
+    "p1": "Nous vivons à une époque où le coût de la fabrication numérique approche de zéro. Dans un monde noyé dans le « bruit synthétique » — un flot de contenu bon marché et automatisé conçu pour capter l'attention mais affamer l'âme — les mots, les images et les connexions sont produits en masse par des machines qui ne respirent pas, ne saignent pas et ne croient pas.",
+    "p2": "Contre cette marée montante, nous traçons une ligne dans le sol. Nous reconnaissons une vérité biologique dure : l'IA ne peut pas pondre un œuf. L'IA ne peut pas guérir un pâturage. L'IA ne peut pas serrer la main d'un client à la porte de la ferme. La technologie peut simuler la réalité, mais elle ne peut pas soutenir la vie; elle peut écrire un poème sur un lever de soleil, mais elle ne peut pas transformer la lumière du soleil en protéines. Le monde numérique n'est qu'une carte; la ferme est le territoire. Nous choisissons de vivre dans le territoire.",
+    "p3": "Alors que le domaine numérique devient infini et bon marché, le monde physique devient fini et précieux. La réalité vérifiée — la vraie nourriture, la vraie terre, les vraies personnes — est l'actif de luxe ultime. Quand tout sur un écran peut être falsifié, la seule monnaie qui garde sa valeur est ce que vous pouvez toucher, goûter et vérifier de vos propres yeux. Nous ne vendons pas des marchandises; nous vendons l'antidote à l'artificiel.",
+    "p4": "Cela ne fait pas de nous des Luddites; cela fait de nous des Architectes. Nous voyons la technologie non pas comme un maître, mais comme un serviteur de la terre. Nous construisons une « Île Sainte » pour isoler notre famille de la dérive culturelle, plaçant un pare-feu entre le chaos de l'écran et la paix du sol. Nous utilisons les outils du présent pour protéger les valeurs du passé.",
+    "p5": "C'est le sol dans lequel nous élevons nos enfants — non pas par des algorithmes, mais par les saisons. Ils sauront que la nourriture ne vient pas d'une imprimante, mais de l'intendance. Ils apprendront qu'on ne peut pas « pirater » une récolte; il faut la mériter. Dans un monde de gratification instantanée, nous choisissons le long et difficile chemin de la régénération.",
+    "quote": "« Tenez-vous sur les chemins et regardez, Et demandez les anciens sentiers, où est le bon chemin, Et marchez-y; Alors vous trouverez le repos pour vos âmes. »",
+    "quoteSource": "Jérémie 6:16",
+    "cta": "Devenir membre fondateur"
+  },
+  "privacy": {
+    "label": "Légal",
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : 27 janvier 2026",
+    "intro": "Chez Lindisfarn, nous respectons votre vie privée et nous nous engageons à protéger vos renseignements personnels. Cette politique explique ce que nous collectons, pourquoi nous le collectons et comment nous le gardons en sécurité — en langage simple.",
+    "sections": {
+      "collect": {
+        "title": "Ce que nous collectons",
+        "intro": "Lorsque vous vous inscrivez comme membre fondateur ou nous contactez, nous collectons :",
+        "items": [
+          "Nom — pour savoir qui vous êtes",
+          "Courriel — notre principal moyen de vous joindre",
+          "Numéro de téléphone — pour la coordination de la cueillette",
+          "Adresse — pour nos dossiers et une livraison potentielle"
+        ],
+        "storage": "Ces informations sont collectées via les formulaires Zoho et stockées de manière sécurisée dans notre compte Zoho."
+      },
+      "payment": {
+        "title": "Informations de paiement",
+        "text": "Tous les paiements sont traités par Stripe. Nous ne voyons jamais, ne stockons jamais et n'avons jamais accès à vos numéros de carte de crédit. Stripe gère tout de manière sécurisée et est conforme à la norme PCI-DSS."
+      },
+      "analytics": {
+        "title": "Analytique du site Web",
+        "intro": "Nous utilisons les outils suivants pour comprendre comment les visiteurs utilisent notre site Web :",
+        "items": [
+          "Facebook Pixel — nous aide à mesurer l'efficacité de notre rayonnement",
+          "Google Analytics — nous indique combien de personnes visitent et quelles pages elles consultent"
+        ],
+        "text": "Ces outils collectent des données anonymes sur votre visite (pages consultées, temps sur le site, emplacement général). Ils ne vous identifient pas personnellement, sauf si vous soumettez un formulaire."
+      },
+      "usage": {
+        "title": "Comment nous utilisons vos informations",
+        "intro": "Nous utilisons vos informations pour :",
+        "items": [
+          "Traiter et confirmer votre adhésion",
+          "Envoyer des mises à jour de commande et des notifications de cueillette",
+          "Partager notre infolettre saisonnière de la ferme (vous pouvez vous désabonner à tout moment)",
+          "Répondre à vos questions"
+        ],
+        "noSale": "Nous ne vendons, ne louons et ne partageons jamais vos renseignements personnels avec des tiers à des fins de marketing. Jamais."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "intro": "En vertu de la loi canadienne sur la protection de la vie privée (LPRPDE), vous avez le droit de :",
+        "items": [
+          "Savoir quelles informations nous avons sur vous",
+          "Demander des corrections à vos informations",
+          "Nous demander de supprimer vos informations",
+          "Retirer votre consentement aux communications"
+        ],
+        "text": "Pour exercer l'un de ces droits, envoyez-nous simplement un courriel. Nous sommes une petite ferme — nous répondrons personnellement."
+      },
+      "security": {
+        "title": "Sécurité des données",
+        "text": "Nous prenons des mesures raisonnables pour protéger vos informations, y compris la soumission sécurisée de formulaires (HTTPS), des services tiers de confiance (Zoho, Stripe) et la limitation de l'accès à vos données aux seules personnes qui en ont besoin."
+      },
+      "contact": {
+        "title": "Nous joindre",
+        "intro": "Des questions sur cette politique? Contactez-nous :"
+      }
+    }
+  },
+  "terms": {
+    "label": "Légal",
+    "title": "Entente d'adhésion des familles fondatrices",
+    "lastUpdated": "Dernière mise à jour : 27 janvier 2026",
+    "intro": "Bienvenue chez Lindisfarn. En vous joignant comme famille fondatrice, vous entrez dans un partenariat avec nous. Cette entente décrit comment ce partenariat fonctionne — clairement et équitablement.",
+    "sections": {
+      "deposit": {
+        "title": "1. Le dépôt",
+        "p1": "Pour réserver votre place, nous exigeons un dépôt de 100 $ par adhésion. Ce dépôt est perçu en mars et est non remboursable.",
+        "p2": "Pourquoi non remboursable? Votre dépôt sert directement à l'achat de poussins et de nourriture au début de la saison. Une fois que nous avons commandé des poules pour vous, ces coûts sont engagés.",
+        "p3": "Votre dépôt sera crédité sur le total de votre commande finale à la cueillette."
+      },
+      "pricing": {
+        "title": "2. Tarification et paiement",
+        "p1": "Le coût final sera calculé en fonction du poids réel habillé de vos poules au prix affiché par livre de la saison en cours.",
+        "howItWorks": "Voici comment cela fonctionne :",
+        "items": [
+          "Vous réservez un minimum de 10 poules",
+          "Les poules sont pesés après la transformation",
+          "Votre total est calculé (poids × prix par livre)",
+          "Votre dépôt de 100 $ est soustrait",
+          "Le solde restant est dû à la cueillette"
+        ],
+        "payment": "Nous acceptons le paiement par virement électronique ou carte de crédit (traité par Stripe)."
+      },
+      "pickup": {
+        "title": "3. Politique de cueillette",
+        "p1": "La cueillette a lieu le jour de la récolte, fin septembre, à notre ferme de Glen Robertson, Ontario. Vous recevrez un courriel pour planifier votre heure de cueillette.",
+        "note": "Veuillez noter : Vos poules sont surgelés et emballés spécifiquement pour vous. Nous ne pouvons pas les garder indéfiniment.",
+        "items": [
+          "Si vous ne pouvez pas venir à l'heure prévue, contactez-nous pour reporter",
+          "Si nous n'avons pas de nouvelles de vous dans les 7 jours suivant le jour de la récolte (« non-présentation »), votre viande sera donnée à une banque alimentaire locale et votre dépôt sera perdu"
+        ],
+        "closing": "Nous comprenons que la vie arrive — communiquez simplement avec nous et nous trouverons une solution."
+      },
+      "liability": {
+        "title": "4. Visites à la ferme et responsabilité",
+        "intro": "Lindisfarn est une ferme en activité. Si vous visitez pour la cueillette ou une visite de la ferme, veuillez noter :",
+        "items": [
+          "Nous avons des clôtures électriques pour protéger nos poules des prédateurs",
+          "Le sol peut être inégal, boueux ou glissant",
+          "De l'équipement agricole et des animaux sont présents",
+          "Les enfants doivent être surveillés en tout temps"
+        ],
+        "text": "En visitant notre ferme, vous reconnaissez ces risques et acceptez de prendre des précautions raisonnables. Vous acceptez également de surveiller les enfants dont vous avez la charge."
+      },
+      "quality": {
+        "title": "5. Qualité du produit",
+        "p1": "Nous élevons nos poules avec soin et utilisons un boucher agréé pour la transformation. Votre poulet arrive emballé sous vide et surgelé.",
+        "p2": "Bien que nous prenions toutes les précautions, l'agriculture implique des variables que nous ne pouvons pas entièrement contrôler (météo, variation naturelle de croissance, etc.). Nous ne pouvons pas garantir des poids ou des quantités exactes d'poules, mais nous communiquerons toujours ouvertement avec vous."
+      },
+      "changes": {
+        "title": "6. Modifications et annulations",
+        "byYou": "Par vous : Si vous devez annuler avant que nous passions notre commande de poussins (généralement début mars), veuillez nous contacter immédiatement. Après la commande des poussins, votre dépôt ne peut pas être remboursé.",
+        "byUs": "Par nous : Dans le cas improbable où nous ne pourrions pas exécuter votre commande (catastrophe naturelle, perte du troupeau, etc.), nous rembourserons votre dépôt complet et vous aviserons dès que possible."
+      },
+      "law": {
+        "title": "7. Droit applicable",
+        "text": "Cette entente est régie par les lois de la province de l'Ontario, Canada. Tout litige sera résolu devant les tribunaux de l'Ontario."
+      },
+      "agreement": {
+        "title": "8. Entente",
+        "p1": "En soumettant votre demande de famille fondatrice et votre dépôt, vous confirmez avoir lu, compris et accepté ces conditions.",
+        "p2": "Des questions? Nous serons heureux de clarifier quoi que ce soit. Contactez-nous."
+      }
+    }
+  },
+  "contact": {
+    "name": "Lindisfarn",
+    "location": "Glen Robertson, Ontario",
+    "email": "Courriel : hello@lindisfarn.com"
+  }
+}

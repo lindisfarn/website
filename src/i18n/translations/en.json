@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "title": "Lindisfarn | A Sanctuary for Real Food",
+    "description": "\"Ora et Labora.\" We are reclaiming the table with food raised in the light. Join 25 Founding Families for our inaugural harvest."
+  },
+  "nav": {
+    "home": "Home",
+    "manifesto": "Manifesto",
+    "howItWorks": "How It Works",
+    "faqs": "FAQs",
+    "joinUs": "Join Us"
+  },
+  "hero": {
+    "tagline": "A Sanctuary for Real Food",
+    "subtitle": "We are reclaiming the table with food raised in the light.",
+    "cta": "Become a Founding Member"
+  },
+  "problem": {
+    "label": "The Problem",
+    "line1": "You already know something is wrong.",
+    "line2": "Grocery store chicken is pale, watery, and flavorless. It needs seasoning just to taste like anything.",
+    "line3": "That's because most birds never see sunlight. They're raised in crowded barns, bred for speed—not nourishment.",
+    "line4": "You deserve better. Your family deserves better.",
+    "manifestoBtn": "Read Our Manifesto"
+  },
+  "way": {
+    "label": "The Way",
+    "title": "Raised in the Light",
+    "p1": "Our chickens live outdoors on fresh pasture, moved daily to new grass.",
+    "p2": "They forage for insects, soak in sunshine, and develop the rich, golden fat that comes only from a life well-lived.",
+    "p3": "No antibiotics. No artificial lighting tricks. Just birds raised the way your great-grandparents remember."
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "title": "The Founder Journey",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Apply",
+        "description": "Submit your Founding Family application. We review each one personally."
+      },
+      {
+        "number": "02",
+        "title": "Reserve",
+        "description": "Pay your $100 deposit in March to secure your spot and minimum 10 birds."
+      },
+      {
+        "number": "03",
+        "title": "We Raise",
+        "description": "From May to September, we raise your birds on pasture with daily moves to fresh grass."
+      },
+      {
+        "number": "04",
+        "title": "Harvest",
+        "description": "In late September, birds are processed by a licensed butcher, vacuum-sealed, and flash-frozen."
+      },
+      {
+        "number": "05",
+        "title": "Pickup",
+        "description": "Collect your order at the farm in Glen Robertson. Pay the balance based on actual weight."
+      }
+    ],
+    "questions": "Questions? Reach out anytime — we're happy to help."
+  },
+  "land": {
+    "label": "The Land",
+    "title": "Glen Robertson, Ontario",
+    "p1": "Our farm sits on 70 acres of rolling pasture in Eastern Ontario.",
+    "p2": "This land has been farmed for over decades. We're stewards, not owners—building soil health for the generations that follow."
+  },
+  "invitation": {
+    "label": "The Invitation",
+    "title": "Become a Founding Family",
+    "p1": "We're opening 25 spots for our inaugural 2026 harvest.",
+    "p2": "As a Founding Member, you'll receive priority access to all future batches, transparent pricing, and a direct relationship with your farmer.",
+    "benefits": {
+      "membersLabel": "FOUNDING MEMBERS",
+      "membersValue": "25 Only",
+      "priceLabel": "PRICE",
+      "priceValue": "Best Forever",
+      "orderLabel": "MINIMUM ORDER",
+      "orderValue": "10 Birds",
+      "pickupLabel": "HARVEST PICKUP",
+      "pickupValue": "Late Sept."
+    },
+    "deposit": "$100 deposit · Minimum 10 birds",
+    "pickup": "Pickup in Glen Robertson, late September 2026",
+    "cta": "Apply Now"
+  },
+  "faq": {
+    "label": "FAQs",
+    "title": "Common Questions",
+    "items": [
+      {
+        "q": "Why is the deposit non-refundable?",
+        "a": "Your deposit is collected in March and goes directly toward purchasing our chicks and feed. Once we've ordered birds for you, those costs are committed. We keep our operation lean—no middlemen, no waste."
+      },
+      {
+        "q": "How much will my final order cost?",
+        "a": "Our chickens are priced by the pound. A typical bird weighs 5-7 lbs dressed. With a 10-bird minimum, expect a total between $350-$490. Your $100 deposit is credited toward this balance."
+      },
+      {
+        "q": "Can I visit the farm?",
+        "a": "Absolutely. We encourage Founding Families to visit during the season. You'll see exactly how your food is raised. Just reach out to schedule a time."
+      },
+      {
+        "q": "What if I can't pick up on Harvest Day?",
+        "a": "Contact us to arrange an alternate time. If we don't hear from you within 7 days, your birds will be donated to a local food bank and your deposit forfeited."
+      },
+      {
+        "q": "Are your chickens organic?",
+        "a": "We follow organic principles but are not certified. Our birds eat non-GMO feed, forage on pasture daily, and receive no antibiotics. Certification is expensive—we'd rather keep your food affordable."
+      },
+      {
+        "q": "What's special about pasture-raised chicken?",
+        "a": "Pasture-raised birds have more omega-3s, more vitamins A and E, and dramatically better flavor. The difference is visible—our birds have golden, firm fat from sunshine and varied diet."
+      },
+      {
+        "q": "What do the chickens look like when I receive them?",
+        "a": "Your birds arrive whole, vacuum-sealed, and flash-frozen. They're fully dressed (cleaned, no head or feet) just like store-bought—but with incomparably better flavor and nutrition."
+      }
+    ]
+  },
+  "ledger": {
+    "label": "The Ledger",
+    "title": "Get in Touch",
+    "p1": "Have questions? Want to know more before applying? Send us a message.",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "message": "Message",
+      "messagePlaceholder": "Your question or message...",
+      "submit": "Send a Message",
+      "sending": "Sending..."
+    }
+  },
+  "footer": {
+    "motto": "Ora et Labora",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "copyright": "© 2026 Lindisfarn · Glen Robertson, Ontario"
+  },
+  "thankYou": {
+    "title": "Thank You",
+    "message": "Your request has been received.",
+    "followUp": "We'll be in touch within 48 hours.",
+    "returnHome": "← Return Home"
+  },
+  "manifesto": {
+    "label": "Our Manifesto",
+    "title": "In Defense of The Real",
+    "motto": "\"Ora et Labora\" — Pray and Work",
+    "p1": "We live in an era where the cost of digital fabrication is approaching zero. In a world drowning in \"synthetic noise\"—a flood of cheap, automated content designed to capture attention but starve the soul—words, images, and connection are being mass-produced by machines that do not breathe, bleed, or believe.",
+    "p2": "Against this rising tide, we draw a line in the soil. We acknowledge a hard, biological truth: AI cannot lay an egg. AI cannot heal a pasture. AI cannot shake a customer's hand at the farm gate. Technology can simulate reality, but it cannot sustain life; it can write a poem about a sunrise, but it cannot turn sunlight into protein. The digital world is merely a map; the farm is the territory. We choose to live in the territory.",
+    "p3": "As the digital realm becomes infinite and cheap, the physical world becomes finite and precious. Verified Reality—real food, real land, real people—is the ultimate luxury asset. When everything on a screen can be faked, the only currency that holds value is what you can touch, taste, and verify with your own eyes. We do not sell commodities; we sell the antidote to the artificial.",
+    "p4": "This does not make us Luddites; it makes us Architects. We view technology not as a master, but as a servant to the land. We are building a \"Holy Island\" to insulate our family from cultural drift, placing a firewall between the chaos of the screen and the peace of the soil. We use the tools of the present to protect the values of the past.",
+    "p5": "This is the soil in which we raise our children—not by algorithms, but by the seasons. They will know that food does not come from a printer, but from stewardship. They will learn that you cannot \"hack\" a harvest; you must earn it. In a world of instant gratification, we choose the long, hard road of regeneration.",
+    "quote": "\"Stand in the ways and see, And ask for the old paths, where the good way is, And walk in it; Then you will find rest for your souls.\"",
+    "quoteSource": "Jeremiah 6:16",
+    "cta": "Become a Founding Member"
+  },
+  "privacy": {
+    "label": "Legal",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: January 27, 2026",
+    "intro": "At Lindisfarn, we respect your privacy and are committed to protecting your personal information. This policy explains what we collect, why we collect it, and how we keep it safe—in plain English.",
+    "sections": {
+      "collect": {
+        "title": "What We Collect",
+        "intro": "When you sign up as a Founding Member or contact us, we collect:",
+        "items": [
+          "Name — so we know who you are",
+          "Email — our primary way to reach you",
+          "Phone Number — for pickup coordination",
+          "Address — for our records and potential delivery"
+        ],
+        "storage": "This information is collected through Zoho Forms and stored securely in our Zoho account."
+      },
+      "payment": {
+        "title": "Payment Information",
+        "text": "All payments are processed by Stripe. We never see, store, or have access to your credit card numbers. Stripe handles everything securely and is PCI-DSS compliant."
+      },
+      "analytics": {
+        "title": "Website Analytics",
+        "intro": "We use the following tools to understand how visitors use our website:",
+        "items": [
+          "Facebook Pixel — helps us measure the effectiveness of our outreach",
+          "Google Analytics — tells us how many people visit and what pages they view"
+        ],
+        "text": "These tools collect anonymous data about your visit (pages viewed, time on site, general location). They do not identify you personally unless you submit a form."
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "intro": "We use your information to:",
+        "items": [
+          "Process and confirm your membership",
+          "Send order updates and pickup notifications",
+          "Share our seasonal farm newsletter (you can unsubscribe anytime)",
+          "Respond to your questions"
+        ],
+        "noSale": "We do not sell, rent, or share your personal information with third parties for marketing purposes. Ever."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "intro": "Under Canadian privacy law (PIPEDA), you have the right to:",
+        "items": [
+          "Know what information we have about you",
+          "Request corrections to your information",
+          "Ask us to delete your information",
+          "Withdraw consent for communications"
+        ],
+        "text": "To exercise any of these rights, simply email us. We're a small farm—we'll respond personally."
+      },
+      "security": {
+        "title": "Data Security",
+        "text": "We take reasonable measures to protect your information, including secure form submission (HTTPS), trusted third-party services (Zoho, Stripe), and limiting access to your data to only those who need it."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "intro": "Questions about this policy? Reach out:"
+      }
+    }
+  },
+  "terms": {
+    "label": "Legal",
+    "title": "Founding Families Membership Agreement",
+    "lastUpdated": "Last Updated: January 27, 2026",
+    "intro": "Welcome to Lindisfarn. By joining as a Founding Family, you're entering a partnership with us. This agreement outlines how that partnership works—clearly and fairly.",
+    "sections": {
+      "deposit": {
+        "title": "1. The Deposit",
+        "p1": "To reserve your spot, we require a $100 deposit per membership. This deposit is collected in March and is non-refundable.",
+        "p2": "Why non-refundable? Your deposit goes directly toward purchasing chicks and feed at the start of the season. Once we've ordered birds for you, those costs are committed.",
+        "p3": "Your deposit will be credited toward your final order total at pickup."
+      },
+      "pricing": {
+        "title": "2. Pricing & Payment",
+        "p1": "The final cost will be calculated based on the actual dressed weight of your birds at the season's current posted price per pound.",
+        "howItWorks": "Here's how it works:",
+        "items": [
+          "You reserve a minimum of 10 birds",
+          "Birds are weighed after processing",
+          "Your total is calculated (weight × price per pound)",
+          "Your $100 deposit is subtracted",
+          "The remaining balance is due at pickup"
+        ],
+        "payment": "We accept payment via e-transfer or credit card (processed through Stripe)."
+      },
+      "pickup": {
+        "title": "3. Pickup Policy",
+        "p1": "Pickup occurs on Harvest Day in late September at our farm in Glen Robertson, Ontario. You will receive an email to schedule your pickup time.",
+        "note": "Please note: Your birds are flash-frozen and packaged specifically for you. We cannot hold them indefinitely.",
+        "items": [
+          "If you cannot make your scheduled time, contact us to reschedule",
+          "If we do not hear from you within 7 days of Harvest Day (\"No Show\"), your meat will be donated to a local food bank and your deposit will be forfeited"
+        ],
+        "closing": "We understand life happens—just communicate with us and we'll work something out."
+      },
+      "liability": {
+        "title": "4. Farm Visits & Liability",
+        "intro": "Lindisfarn is a working farm. If you visit for pickup or a farm tour, please be aware:",
+        "items": [
+          "We have electric fencing to protect our birds from predators",
+          "The ground may be uneven, muddy, or slippery",
+          "Farm equipment and animals are present",
+          "Children must be supervised at all times"
+        ],
+        "text": "By visiting our farm, you acknowledge these risks and agree to take reasonable precautions. You also agree to supervise any children in your care."
+      },
+      "quality": {
+        "title": "5. Product Quality",
+        "p1": "We raise our birds with care and use a licensed butcher for processing. Your chicken arrives vacuum-sealed and flash-frozen.",
+        "p2": "While we take every precaution, farming involves variables we cannot fully control (weather, natural variation in growth, etc.). We cannot guarantee exact bird weights or quantities, but we will always communicate openly with you."
+      },
+      "changes": {
+        "title": "6. Changes & Cancellations",
+        "byYou": "By You: If you need to cancel before we place our chick order (typically early March), please contact us immediately. After chicks are ordered, your deposit cannot be refunded.",
+        "byUs": "By Us: In the unlikely event we cannot fulfill your order (natural disaster, flock loss, etc.), we will refund your full deposit and notify you as soon as possible."
+      },
+      "law": {
+        "title": "7. Governing Law",
+        "text": "This agreement is governed by the laws of the Province of Ontario, Canada. Any disputes will be resolved in the courts of Ontario."
+      },
+      "agreement": {
+        "title": "8. Agreement",
+        "p1": "By submitting your Founding Family application and deposit, you confirm that you have read, understood, and agree to these terms.",
+        "p2": "Questions? We're happy to clarify anything. Just reach out."
+      }
+    }
+  },
+  "contact": {
+    "name": "Lindisfarn",
+    "location": "Glen Robertson, Ontario",
+    "email": "Email: hello@lindisfarn.com"
+  }
+}

@@ -3,6 +3,14 @@
  * TheInvitation — Act V
  * Key offer details with CTA to Zoho Tables
  */
+import { getTranslations } from '../i18n/utils';
+import { getLocaleFromPath } from '../i18n/config';
+
+// Get locale from prop or URL
+const { lang } = Astro.props;
+const currentLocale = lang || getLocaleFromPath(Astro.url.pathname);
+const t = getTranslations(currentLocale);
+const isFrench = currentLocale === 'fr';
 ---
 
 <section 
@@ -13,43 +21,40 @@
     
     <!-- Section Label -->
     <p class="text-center text-xs tracking-[0.3em] uppercase text-[#C8A97E] mb-12 font-['JetBrains_Mono',monospace]">
-      The Invitation
+      {t.invitation.label}
     </p>
 
     <h2 class="text-center font-['Cormorant_Garamond',serif] text-3xl md:text-4xl lg:text-5xl text-[#ffffff] mb-12 md:mb-16">
-      Partner With Us
+      {t.invitation.title}
     </h2>
     
     <!-- Main Copy -->
     <div class="text-center space-y-6 font-['EB_Garamond',serif] text-xl md:text-2xl leading-relaxed text-[#F2F0E9]">
       <p>
-        For our inaugural season, we are seeking <strong class="font-semibold text-[#C8A97E]">25 Founding Members</strong> to partner with us.
+        <span set:html={t.invitation.p1} />
       </p>
       <p>
-        We are not selling chickens; we are offering a share of the harvest.
-      </p>
-      <p>
-        Reserve a minimum of 10 birds, raised specifically for your table.
+        <span set:html={t.invitation.p2} />
       </p>
     </div>
 
     <!-- Key Benefits -->
     <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
       <div>
-        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">FOUNDING MEMBERS</p>
-        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">25 Only</p>
+        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">{t.invitation.benefits.membersLabel}</p>
+        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">{t.invitation.benefits.membersValue}</p>
       </div>
       <div>
-        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">PRICE</p>
-        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">Best Forever</p>
+        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">{t.invitation.benefits.priceLabel}</p>
+        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">{t.invitation.benefits.priceValue}</p>
       </div>
       <div>
-        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">MINIMUM ORDER</p>
-        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">10 Birds</p>
+        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">{t.invitation.benefits.orderLabel}</p>
+        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">{t.invitation.benefits.orderValue}</p>
       </div>
       <div>
-        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">HARVEST PICKUP</p>
-        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">Late Sept.</p>
+        <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#C8A97E] mb-2">{t.invitation.benefits.pickupLabel}</p>
+        <p class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl text-[#F2F0E9]">{t.invitation.benefits.pickupValue}</p>
       </div>
     </div>
 
@@ -57,10 +62,10 @@
     <div class="mt-14 text-center">
       <div class="inline-block border border-[#F2F0E9]/20 px-6 py-4 md:px-8 md:py-5">
         <p class="font-['JetBrains_Mono',monospace] text-xs md:text-sm tracking-wider text-[#F2F0E9]/80">
-          Target Weight: 4.5 – 5.0 lbs &nbsp;//&nbsp; Est. $7.00/lb
+          {t.invitation.deposit}
         </p>
         <p class="font-['JetBrains_Mono',monospace] text-[10px] md:text-xs tracking-wide text-[#F2F0E9]/50 mt-2">
-          ( Deposits collected from accepted members in March )
+          {t.invitation.pickup}
         </p>
       </div>
     </div>
@@ -68,13 +73,13 @@
     <!-- CTA Button -->
     <div class="mt-12 text-center">
       <a 
-        href="https://ca.bigin.online/org110002349717/forms/apply-for-membership"
+        href={isFrench ? "https://ca.bigin.online/org110002349717/forms/devenir-membre" : "https://ca.bigin.online/org110002349717/forms/apply-for-membership"}
         target="_blank"
         rel="noopener noreferrer"
-        onclick="if(typeof fbq !== 'undefined') fbq('track', 'CompleteRegistration', {content_name: 'Founding Membership Application'});"
+        onclick="if(typeof fbq !== 'undefined') fbq('track', 'CompleteRegistration', {content_name: isFrench ? 'Founding Membership Application (FR)' : 'Founding Membership Application'});"
         class="inline-block px-10 py-4 bg-[#C8A97E] text-[#1a1a1a] font-['JetBrains_Mono',monospace] text-sm tracking-[0.15em] uppercase hover:bg-[#F2F0E9] transition-colors duration-300"
       >
-        Apply for Founding Membership
+        {t.invitation.cta}
       </a>
     </div>
 

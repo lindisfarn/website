@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import HeroOpening from '../../components/HeroOpening.astro';
+import TheProblem from '../../components/TheProblem.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import FAQ from '../../components/FAQ.astro';
+import TheLand from '../../components/TheLand.astro';
+import TheInvitation from '../../components/TheInvitation.astro';
+import TheLedger from '../../components/TheLedger.astro';
+import { getTranslations } from '../../i18n/utils';
+
+const t = getTranslations('fr');
+---
+
+<Layout 
+  title={t.meta.title}
+  description={t.meta.description}
+  lang="fr"
+>
+  <!-- Act I: The Opening -->
+  <HeroOpening lang="fr" />
+  
+  <!-- Act II: The Problem -->
+  <TheProblem lang="fr" />
+  
+  <!-- How It Works -->
+  <HowItWorks lang="fr" />
+  
+  <!-- FAQ -->
+  <FAQ lang="fr" />
+  
+  <!-- Act IV: The Land -->
+  <TheLand lang="fr" />
+  
+  <!-- Act V: The Invitation -->
+  <TheInvitation lang="fr" />
+  
+  <!-- Act VI: The Ledger -->
+  <TheLedger lang="fr" />
+</Layout>

@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../i18n/utils';
+
+const t = getTranslations('fr');
+---
+
+<Layout title="Merci — Lindisfarn" description="Votre demande d'adhésion en tant que famille fondatrice a été reçue.">
+  <main class="min-h-screen flex items-center justify-center px-6 py-24">
+    <div class="max-w-md text-center">
+      <!-- Crest -->
+      <img 
+        src="/crest.png" 
+        alt="Lindisfarn" 
+        class="mx-auto mb-8 w-24 md:w-32"
+      />
+      
+      <h1 class="font-['Cormorant_Garamond',serif] text-4xl md:text-5xl text-[#2B2B2B] mb-6">
+        {t.thankYou.title}
+      </h1>
+      
+      <p class="font-['EB_Garamond',serif] text-xl text-[#4A5A66] leading-relaxed mb-8">
+        {t.thankYou.message}<br/>
+        {t.thankYou.followUp}
+      </p>
+      
+      <a 
+        href="/fr/"
+        class="inline-block font-['JetBrains_Mono',monospace] text-sm tracking-widest text-[#2B2B2B] hover:text-[#C8A97E] transition-colors"
+      >
+        {t.thankYou.returnHome}
+      </a>
+    </div>
+  </main>
+</Layout>

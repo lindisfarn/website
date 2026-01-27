@@ -3,6 +3,13 @@
  * TheLand — Act IV
  * Instagram-style grid gallery
  */
+import { getTranslations } from '../i18n/utils';
+import { getLocaleFromPath } from '../i18n/config';
+
+// Get locale from prop or URL
+const { lang } = Astro.props;
+const currentLocale = lang || getLocaleFromPath(Astro.url.pathname);
+const t = getTranslations(currentLocale);
 ---
 
 <section 
@@ -13,13 +20,13 @@
     <!-- Section header -->
     <div class="text-center mb-8 md:mb-12">
       <p class="font-['JetBrains_Mono',monospace] text-xs tracking-widest text-[#4A5A66] mb-2">
-        45.2356° N, 74.6278° W
+        {t.land.label}
       </p>
       <h2 class="font-['Cormorant_Garamond',serif] text-2xl md:text-3xl lg:text-4xl text-[#2B2B2B]">
-        Glen Robertson, Ontario
+        {t.land.title}
       </h2>
       <p class="mt-2 font-['EB_Garamond',serif] text-base text-[#4A5A66]">
-        90 minutes from Ottawa. 60 from Montreal.
+        {t.land.p1} {t.land.p2}
       </p>
     </div>
     
