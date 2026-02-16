@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Lindisfarn: Rooted in the land, raised for your table.",
-    "description": "\"Ora et Labora.\" We are reclaiming the table with food raised in the light. Join 25 Founding Families for our inaugural harvest."
+    "description": "\"Ora et Labora.\" We are reclaiming the table with food raised in the light. 2026 is sold out — join the waitlist for our 2027 harvest."
   },
   "nav": {
     "home": "Home",
@@ -13,7 +13,7 @@
   "hero": {
     "tagline": "A Sanctuary for Real Food",
     "subtitle": "We are reclaiming the table with food raised in the light.",
-    "cta": "Become a Founding Member"
+    "cta": "Join the 2027 Waitlist"
   },
   "problem": {
     "label": "The Problem",
@@ -32,12 +32,12 @@
   },
   "howItWorks": {
     "label": "How It Works",
-    "title": "The Founder Journey",
+    "title": "The Journey",
     "steps": [
       {
         "number": "01",
         "title": "Apply",
-        "description": "Submit your Founding Family application. We review each one personally."
+        "description": "Join our waitlist for 2027. We review each request personally."
       },
       {
         "number": "02",
@@ -70,12 +70,12 @@
   },
   "invitation": {
     "label": "The Invitation",
-    "title": "Become a Founding Family",
-    "p1": "We're opening 25 spots for our inaugural 2026 harvest.",
-    "p2": "As a Founding Member, you'll receive priority access to all future batches, transparent pricing, and a direct relationship with your farmer.",
+    "title": "2026 is Sold Out — Join the 2027 Waitlist",
+    "p1": "Our inaugural 2026 harvest is fully reserved! We're now accepting waitlist registrations for 2027.",
+    "p2": "Join the waitlist to be the first to know when spots open for our 2027 season. Priority access, transparent pricing, and a direct relationship with your farmer.",
     "benefits": {
-      "membersLabel": "FOUNDING MEMBERS",
-      "membersValue": "25 Only",
+      "membersLabel": "2026 STATUS",
+      "membersValue": "Sold Out",
       "priceLabel": "PRICE",
       "priceValue": "Best Forever",
       "orderLabel": "MINIMUM ORDER",
@@ -84,8 +84,8 @@
       "pickupValue": "Late Sept."
     },
     "deposit": "$100 deposit · Minimum 10 birds",
-    "pickup": "Pickup in Glen Robertson, late September 2026",
-    "cta": "Apply Now"
+    "pickup": "Pickup in Glen Robertson, late September 2027",
+    "cta": "Join the 2027 Waitlist"
   },
   "faq": {
     "label": "FAQs",
@@ -158,7 +158,7 @@
     "p5": "This is the soil in which we raise our children—not by algorithms, but by the seasons. They will know that food does not come from a printer, but from stewardship. They will learn that you cannot \"hack\" a harvest; you must earn it. In a world of instant gratification, we choose the long, hard road of regeneration.",
     "quote": "\"Stand in the ways and see, And ask for the old paths, where the good way is, And walk in it; Then you will find rest for your souls.\"",
     "quoteSource": "Jeremiah 6:16",
-    "cta": "Become a Founding Member"
+    "cta": "Join the 2027 Waitlist"
   },
   "privacy": {
     "label": "Legal",

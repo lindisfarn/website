@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Lindisfarn | Un sanctuaire pour la vraie nourriture",
-    "description": "« Ora et Labora. » Nous réclamons la table avec des animaux élevés à la lumière. Joignez-vous à 25 familles fondatrices pour notre récolte inaugurale."
+    "description": "« Ora et Labora. » Nous réclamons la table avec des animaux élevés à la lumière. 2026 est complet — rejoignez la liste d'attente pour notre récolte 2027."
   },
   "nav": {
     "home": "Accueil",
@@ -13,7 +13,7 @@
   "hero": {
     "tagline": "Un sanctuaire pour la vraie nourriture",
     "subtitle": "Nous réclamons la table avec des animaux élevés naturellement.",
-    "cta": "Devenir membre fondateur"
+    "cta": "Rejoindre la liste d'attente 2027"
   },
   "problem": {
     "label": "Le problème",
@@ -32,12 +32,12 @@
   },
   "howItWorks": {
     "label": "Comment ça marche",
-    "title": "Le parcours du fondateur",
+    "title": "Le parcours",
     "steps": [
       {
         "number": "01",
         "title": "Postuler",
-        "description": "Soumettez votre demande de membre fondateur. Nous examinons chacune personnellement."
+        "description": "Inscrivez-vous à notre liste d'attente pour 2027. Nous examinons chaque demande personnellement."
       },
       {
         "number": "02",
@@ -70,12 +70,12 @@
   },
   "invitation": {
     "label": "L'invitation",
-    "title": "Devenez un membre fondateur",
-    "p1": "Nous ouvrons 25 places pour notre récolte inaugurale de 2026.",
-    "p2": "En tant que membre fondateur, vous bénéficierez d'un accès prioritaire à tous les futurs lots, d'une tarification transparente et d'une relation directe avec votre fermier.",
+    "title": "2026 est complet — Rejoignez la liste d'attente 2027",
+    "p1": "Notre récolte inaugurale de 2026 est complète! Nous acceptons maintenant les inscriptions à la liste d'attente pour 2027.",
+    "p2": "Rejoignez la liste d'attente pour être les premiers informés lorsque les places s'ouvriront pour notre saison 2027. Accès prioritaire, tarification transparente et une relation directe avec votre fermier.",
     "benefits": {
-      "membersLabel": "MEMBRES FONDATEURS",
-      "membersValue": "25",
+      "membersLabel": "STATUT 2026",
+      "membersValue": "Complet",
       "priceLabel": "PRIX",
       "priceValue": "Meilleur",
       "orderLabel": "COMMANDE MINIMUM",
@@ -84,8 +84,8 @@
       "pickupValue": "Fin Sept."
     },
     "deposit": "Dépôt de 100 $ · Minimum de 10 poules",
-    "pickup": "Cueillette à Glen Robertson, fin septembre 2026",
-    "cta": "Postuler maintenant"
+    "pickup": "Cueillette à Glen Robertson, fin septembre 2027",
+    "cta": "Rejoindre la liste d'attente 2027"
   },
   "faq": {
     "label": "FAQ",
@@ -158,7 +158,7 @@
     "p5": "C'est le sol dans lequel nous élevons nos enfants — non pas par des algorithmes, mais par les saisons. Ils sauront que la nourriture ne vient pas d'une imprimante, mais de l'intendance. Ils apprendront qu'on ne peut pas « pirater » une récolte; il faut la mériter. Dans un monde de gratification instantanée, nous choisissons le long et difficile chemin de la régénération.",
     "quote": "« Tenez-vous sur les chemins et regardez, Et demandez les anciens sentiers, où est le bon chemin, Et marchez-y; Alors vous trouverez le repos pour vos âmes. »",
     "quoteSource": "Jérémie 6:16",
-    "cta": "Devenir membre fondateur"
+    "cta": "Rejoindre la liste d'attente 2027"
   },
   "privacy": {
     "label": "Légal",
